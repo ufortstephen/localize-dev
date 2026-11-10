@@ -69,4 +69,5 @@ The GitHub Action is [ufortstephen/autolocalize-action](https://github.com/ufort
 ## License
 
 The files in this repository (plugin manifests, skill, rule and MCP configuration) are MIT
-licensed. The `localize-dev` package they run has its own license, included in the package.
+licensed: see [legal/plugin-files-license.txt](legal/plugin-files-license.txt). The `localize-dev`
+package they run isn't open source; its license is included in the package.
