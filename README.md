@@ -56,6 +56,16 @@ There's a free tier. Create a key at
 [uselocalize.dev/dashboard/keys](https://uselocalize.dev/dashboard/keys), then run
 `npx localize-dev login` once, or set `LOCALIZE_API_KEY`.
 
+## Data
+
+`check` and `config` run on your machine and send nothing. `localize`, `translate` and
+`add_language` send the localize.dev API only the UI text being translated, the path of the file
+it came from and short component context, never whole files. The API translates them with a
+hosted model (Google Gemini, with OpenAI and Mistral as backups, through Vercel AI Gateway), which
+doesn't train on them. localize.dev doesn't store the source text, only a one-way fingerprint of
+it, and keeps the returned translations in your workspace's translation memory until you delete
+the workspace. Details: [uselocalize.dev/privacy](https://uselocalize.dev/privacy).
+
 ## Set up a project
 
 ```bash
