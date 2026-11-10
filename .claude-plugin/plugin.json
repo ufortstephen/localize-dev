@@ -1,0 +1,11 @@
+{
+  "name": "localize-dev",
+  "displayName": "localize.dev",
+  "version": "0.33.2",
+  "description": "Ship your app in every language. Finds hardcoded UI text, gives it translation keys, translates it with your app's context and writes the locale files, from inside the agent.",
+  "author": { "name": "localize.dev", "url": "https://uselocalize.dev" },
+  "homepage": "https://uselocalize.dev",
+  "repository": "https://github.com/ufortstephen/localize-dev",
+  "license": "MIT",
+  "keywords": ["i18n", "localization", "translation", "react", "nextjs", "vue", "svelte", "react-native", "mcp"]
+}

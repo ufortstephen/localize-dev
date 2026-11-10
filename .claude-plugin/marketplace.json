@@ -1,0 +1,12 @@
+{
+  "name": "uselocalize",
+  "owner": { "name": "localize.dev", "url": "https://uselocalize.dev" },
+  "metadata": { "description": "localize.dev plugins for Claude Code" },
+  "plugins": [
+    {
+      "name": "localize-dev",
+      "source": "./",
+      "description": "Find hardcoded UI text, give it translation keys and translate it, from inside Claude Code."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "localize": {
+      "command": "npx",
+      "args": ["-y", "localize-dev", "mcp"]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ufortstephen/localize-dev",
+  "title": "localize.dev",
+  "description": "Find hardcoded UI text, give it translation keys, translate it and write the locale files.",
+  "websiteUrl": "https://uselocalize.dev",
+  "repository": {
+    "url": "https://github.com/ufortstephen/localize-dev",
+    "source": "github"
+  },
+  "version": "0.33.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "localize-dev",
+      "version": "0.33.2",
+      "runtimeHint": "npx",
+      "packageArguments": [{ "type": "positional", "value": "mcp" }],
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "LOCALIZE_API_KEY",
+          "description": "localize.dev API key, from https://uselocalize.dev/dashboard/keys. Not needed for check and config, or after npx localize-dev login.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
