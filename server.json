@@ -8,15 +8,22 @@
     "url": "https://github.com/ufortstephen/localize-dev",
     "source": "github"
   },
-  "version": "0.33.2",
+  "version": "0.33.3",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "localize-dev",
-      "version": "0.33.2",
+      "version": "0.33.3",
       "runtimeHint": "npx",
-      "packageArguments": [{ "type": "positional", "value": "mcp" }],
-      "transport": { "type": "stdio" },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "mcp"
+        }
+      ],
+      "transport": {
+        "type": "stdio"
+      },
       "environmentVariables": [
         {
           "name": "LOCALIZE_API_KEY",
@@ -24,6 +31,28 @@
           "isRequired": false,
           "isSecret": true,
           "format": "string"
+        }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://uselocalize.dev/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer followed by a localize.dev API key, from https://uselocalize.dev/dashboard/keys.",
+          "isRequired": true,
+          "isSecret": true,
+          "value": "Bearer {api_key}",
+          "variables": {
+            "api_key": {
+              "description": "localize.dev API key",
+              "isRequired": true,
+              "isSecret": true
+            }
+          }
         }
       ]
     }

@@ -50,6 +50,28 @@ Run `npx -y localize-dev mcp` as a stdio server. It's listed in the
 | `translate` | Fills in missing translations in existing locale files | Yes |
 | `add_language` | Adds a language and translates every message into it | Yes |
 
+## Hosted server (Lovable, Bolt, v0 and other browser-based builders)
+
+Agents that can't start a local process can connect to `https://uselocalize.dev/api/mcp` as a
+Streamable HTTP server. Clients that support OAuth sign in and you approve the connection on
+localize.dev; otherwise send a localize.dev API key as the bearer token (or in an `x-api-key` header):
+
+```json
+{
+  "mcpServers": {
+    "localize": {
+      "type": "http",
+      "url": "https://uselocalize.dev/api/mcp",
+      "headers": { "Authorization": "Bearer YOUR_API_KEY" }
+    }
+  }
+}
+```
+
+It has the same tools. Each call carries the files the tool needs (`files: [{ path, content }]`)
+and returns the files to write back. Every call needs a key or an OAuth sign-in; `check` and
+`config` still don't count toward your plan.
+
 ## API key
 
 There's a free tier. Create a key at
@@ -64,7 +86,8 @@ it came from and short component context, never whole files. The API translates 
 hosted model (Google Gemini, with OpenAI and Mistral as backups, through Vercel AI Gateway), which
 doesn't train on them. localize.dev doesn't store the source text, only a one-way fingerprint of
 it, and keeps the returned translations in your workspace's translation memory until you delete
-the workspace. Details: [uselocalize.dev/privacy](https://uselocalize.dev/privacy).
+the workspace. The hosted server writes the files an agent sends to a temporary folder for that
+call and deletes them when it answers; they aren't stored or logged. Details: [uselocalize.dev/privacy](https://uselocalize.dev/privacy).
 
 ## Set up a project
 
