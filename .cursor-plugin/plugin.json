@@ -1,7 +1,7 @@
 {
   "name": "localize-dev",
   "displayName": "localize.dev",
-  "version": "0.34.2",
+  "version": "0.34.4",
   "description": "Ship your app in every language. Finds hardcoded UI text, gives it translation keys, translates it with your app's context and writes the locale files, from inside the agent.",
   "author": { "name": "localize.dev", "email": "hello@uselocalize.dev" },
   "homepage": "https://uselocalize.dev",
