@@ -1,5 +1,7 @@
 # localize.dev
 
+[![mcptry](https://mcptry.com/badge/io.github.ufortstephen/localize-dev)](https://mcptry.com/servers/io.github.ufortstephen/localize-dev)
+
 Ship your app in every language. localize.dev finds hardcoded UI text in your code, gives it
 translation keys, translates it with your app's context, writes the locale files and opens one
 pull request. It works with React, Next.js, React Native, Vue, Svelte, Astro, Angular, Flutter,

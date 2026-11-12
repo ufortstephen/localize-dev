@@ -4,16 +4,32 @@
   "title": "localize.dev",
   "description": "Find hardcoded UI text, give it translation keys, translate it and write the locale files.",
   "websiteUrl": "https://uselocalize.dev",
+  "icons": [
+    {
+      "src": "https://uselocalize.dev/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    },
+    {
+      "src": "https://uselocalize.dev/icon2",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
   "repository": {
     "url": "https://github.com/ufortstephen/localize-dev",
     "source": "github"
   },
-  "version": "0.33.4",
+  "version": "0.34.0",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "localize-dev",
-      "version": "0.33.4",
+      "version": "0.34.0",
       "runtimeHint": "npx",
       "packageArguments": [
         {

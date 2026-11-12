@@ -2,7 +2,7 @@
   "mcpServers": {
     "localize": {
       "command": "npx",
-      "args": ["-y", "localize-dev@0.33.4", "mcp"]
+      "args": ["-y", "localize-dev@0.34.0", "mcp"]
     }
   }
 }
