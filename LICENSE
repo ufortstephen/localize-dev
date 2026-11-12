@@ -1,0 +1,11 @@
+localize.dev plugins
+
+The files in this repository (plugin manifests, rules, skills and MCP configuration) are
+released under the MIT License. The full text is in legal/plugin-files-license.txt.
+
+The MCP server these files install, the localize-dev npm package, is proprietary and is not
+included in this repository. Its license ships with the package:
+https://www.npmjs.com/package/localize-dev (LICENSE).
+
+The hosted server at https://uselocalize.dev/api/mcp is covered by the terms at
+https://uselocalize.dev/terms.
