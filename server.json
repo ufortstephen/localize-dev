@@ -24,12 +24,12 @@
     "url": "https://github.com/ufortstephen/localize-dev",
     "source": "github"
   },
-  "version": "0.34.6",
+  "version": "0.35.0",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "localize-dev",
-      "version": "0.34.6",
+      "version": "0.35.0",
       "runtimeHint": "npx",
       "packageArguments": [
         {
