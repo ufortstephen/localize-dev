@@ -1,6 +1,7 @@
 # localize.dev
 
 [![mcptry](https://mcptry.com/badge/io.github.ufortstephen/localize-dev)](https://mcptry.com/servers/io.github.ufortstephen/localize-dev)
+[![localize.dev on AI Agents Listing](https://aiagentslisting.com/localize-dev/badge.svg?claim=b855bced74b2beb9a0dd231638ad8954)](https://aiagentslisting.com/mcp/localize-dev)
 
 Ship your app in every language. localize.dev finds hardcoded UI text in your code, gives it
 translation keys, translates it with your app's context, writes the locale files and opens one
